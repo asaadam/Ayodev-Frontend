@@ -15,12 +15,14 @@ export default function Button(props) {
     }
     return (
         <div>
-            <button onClick={() => {
+            <button onClick={()=>{
                 operation(1)
             }}>{type}1</button>
             <button onClick={() => {
                 operation(2)
             }}>{type}2</button>
         </div>
+
     )
+
 }
