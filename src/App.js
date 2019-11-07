@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Button from './component/Button';
-import Text from './component/Text';
+import Text from './component/ListMahasiswa';
 
 let dataFromBackend =
   [
