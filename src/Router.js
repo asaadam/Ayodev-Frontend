@@ -4,6 +4,14 @@ import Homepage from './pages/HomePage';
 import Login from './pages/Login';
 import Register from './pages/Register';
 
+
+
+function NotFound(){
+    return (
+        <h1>Page Not Found</h1>
+    )
+}
+
 export default function Router() {
     return (
         <Brow>
@@ -18,6 +26,10 @@ export default function Router() {
                 <Route path="/register">
                     <Register />
                 </Route>
+                <Route path="*">
+                    <NotFound/>
+                </Route>
+
             </Switch>
 
         </Brow>
